@@ -178,9 +178,9 @@ body {
   display: flex; }
 
 .cartdrop {
-  top: 65px;
+  top: 20px;
   z-index: 2;
-  width: 262px;
+  width: 295px;
   flex-direction: column;
   justify-content: center; }
 
@@ -344,6 +344,11 @@ body {
 
 .f1:hover .fimg {
   filter: brightness(50%); }
+
+.f1 a {
+  text-decoration: none;
+  color: #222222;
+}
 
 .f1:hover .addcart {
   display: flex; }
@@ -975,7 +980,7 @@ body {
   display: block; }
 
 .cd-accordion-menu input[type=checkbox]:checked + label {
-  background-image: url("img/arrow_close.png");
+  background-image: url("/img/arrow_close.png");
   background-repeat: no-repeat;
   background-position: right; }
 
@@ -992,7 +997,7 @@ body {
   margin-top: 18px;
   padding: 11px;
   border-bottom: 1px solid #ebebeb;
-  background-image: url("img/arrow_open.png");
+  background-image: url("/img/arrow_open.png");
   background-repeat: no-repeat;
   background-position: right; }
 
@@ -1316,6 +1321,49 @@ display: block;
   grid-column: 1 / 6;
 }
 
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+}
 
-/*# sourceMappingURL=style.css.map */
+.cart-right-block{
+  text-align: right;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.cart-del-btn{
+  margin-top: 5px;
+  background-color: #2f2a2d;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  color: #fafafa;
+  border-radius: 5px;
+  transition: all ease-in-out .4s;
+  cursor: pointer;
+}
+
+.cart-del-btn:hover{
+  background-color: #fafafa;
+  color: #2f2a2d;
+  border: 1px solid #2f2a2d;
+}
+
+.cart-length {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #f16d7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:-7px;
+  right: -8px;
+}
+
+.cart {
+  position: relative;
+}
 

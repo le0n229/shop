@@ -1,0 +1,13 @@
+{
+    "amount": 52,
+    "countGoods": 1,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 126,
+            "product_name": "MANGO PEOPLE T-SHIRT3",
+            "price": "52.00",
+            "img": "f3img fimg"
+        }
+    ]
+}

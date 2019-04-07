@@ -15,7 +15,7 @@ router.get('/cart', (req, res) => {
   res.render('cart');
 });
 
-router.get('/product', (req, res) => {
+router.get('/product/:id', (req, res) => {
   res.render('product');
 });
 
