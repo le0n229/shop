@@ -5,6 +5,7 @@ Vue.component('cart', { // eslint-disable-line
       cartUrl: '/getBasket.json',
       cartItems: [],
       cartAmount: 0,
+      showCart: false,
     };
   },
   methods: {
@@ -59,10 +60,10 @@ Vue.component('cart', { // eslint-disable-line
       });
   },
   template: `
-  <div id="cart" class="cart">
+  <div id="cart" class="cart" @click="showCart = !showCart">
   <a href="#"><img src="/img/cart.svg" alt="cart"></a>
   <div class="cart-length">{{this.cartItems.length}}</div>
-  <div id="cartDrop" class="dropbox cartdrop">   
+  <div id="cartDrop" class="dropbox cartdrop" v-show="showCart">   
       <div id=cartProducts class="cart-products">
         <h3 v-if="!cartItems.length">Корзина пуста</h3>
         <cart-item v-for="item of cartItems"
