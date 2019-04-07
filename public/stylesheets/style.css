@@ -253,6 +253,7 @@ body {
 .cartprod1 h3 {
   padding: 10px;
   display: block;
+  font-size: 0.9em;
 }
 
 .cartprod1 {
@@ -1470,10 +1471,10 @@ body {
   padding: 0px;
 }
 
-#cartPageProducts {
+.cartPageProducts {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 200px 150px 150px 150px 150px;
   width: 800px;
 }
 
@@ -1553,8 +1554,15 @@ body {
   position: absolute;
   top: -7px;
   right: -8px;
+  color: white;
 }
 
 .cart {
   position: relative;
+}
+
+.cartPageQuantity input {
+  width:40px;
+  height: 20px;
+
 }
